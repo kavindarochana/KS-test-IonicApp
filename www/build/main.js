@@ -48,15 +48,19 @@ var HomePage = (function () {
     function HomePage(navCtrl) {
         this.navCtrl = navCtrl;
     }
+    HomePage.prototype.findData = function () {
+        console.log("KS");
+    };
     return HomePage;
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"/home/kash/Desktop/KS_test/KS_test/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      KS search App \n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-grid>\n  <ion-row>\n    <ion-col col-12>\n      <ion-label>Select Language</ion-label>\n      <ion-select>\n\n        <ion-option value="Java" >Java</ion-option>\n        <ion-option value="Matlab" >Matlab</ion-option>\n        <ion-option value="Perl" >Perl</ion-option>\n        <ion-option value="Arduino" >Arduino</ion-option>\n        <ion-option value="C#" >C#</ion-option>\n        <ion-option value="Go" >Go</ion-option>\n        <ion-option value="Perl" >Perl</ion-option>\n\n      </ion-select>\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col col-6>Search here</ion-col>\n  </ion-row>\n</ion-grid>\n  \n  \n\n\n</ion-content>\n'/*ion-inline-end:"/home/kash/Desktop/KS_test/KS_test/src/pages/home/home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/home/kash/Desktop/KS_test/KS_test/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      KS search App \n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-grid>\n  <ion-row>\n    <ion-col col-12>\n      <ion-label>Select Language</ion-label>\n      <ion-select>\n\n        <ion-option value="Java" >Java</ion-option>\n        <ion-option value="Matlab" >Matlab</ion-option>\n        <ion-option value="Perl" >Perl</ion-option>\n        <ion-option value="Arduino" >Arduino</ion-option>\n        <ion-option value="C#" >C#</ion-option>\n        <ion-option value="Go" >Go</ion-option>\n        <ion-option value="Perl" >Perl</ion-option>\n\n      </ion-select>\n    </ion-col>\n  </ion-row>\n  <ion-row>\n    <ion-col col-12>\n      <ion-searchbar (keyup)="findData()" ></ion-searchbar>\n      <ion-list>\n       \n      </ion-list>\n\n\n    </ion-col>\n  </ion-row>\n</ion-grid>\n  \n  \n\n\n</ion-content>\n'/*ion-inline-end:"/home/kash/Desktop/KS_test/KS_test/src/pages/home/home.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object])
 ], HomePage);
 
+var _a;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
